@@ -6,7 +6,22 @@
   color: white;
   position: relative;
   margin: 18px 10px 50px 10px;
+   -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
 }
+
+.card:hover {
+   -webkit-transform:scale(1.10); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:scale(1.10); /* Opera */
+     transform:scale(1.10);
+}
+
+
 .card-user {
   position: absolute;
   right: 10px;
@@ -43,12 +58,15 @@
   z-index: 2;
   background: black;
   opacity: 0;
+
 }
 .card-link:hover {
   opacity: 0.1;
+
 }
 .flats {
-  font-size: 30px;
+  font-size: 35px;
   font-style: bold;
+  color: $blue;
 }
 
